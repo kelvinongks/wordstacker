@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+	<title>SAP</title>
+	<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+	<link rel="StyleSheet" href="./css/fonts.css" type="text/css">
+	<link rel="StyleSheet" href="./css/index.css" type="text/css">
+	<!--link rel="manifest" href="./files/manifest.json"-->
+	<script src="./files/libs/html2canvas.min.js"></script>
+	<script src="./files/libs/jquery-3.5.1.min.js"></script>
+	<script src="./files/libs/createjs-1.0.1a.min.js"></script>
+	<script src="./files/libs/scaleBitmap.js"></script>
+	<script src="./files/libs/properties.js?202011241940"></script>
+	<script src="./files/libs/common.js?202011241940"></script>
+	<script src="./files/libs/geolocation.js?202011241940"></script>
+	<script src="./files/libs/gameManager.js?202011241940"></script>
+	<script src="./files/eng-resource02.js?202011241940"></script>
+	<script src="./files/main.js?202011241940"></script>
+</head>
+<body>
+	<div id="appContainer">
+		<input type="file" id="imageLoader" name="imageLoader" hidden />		
+		<div id="canvasContainer">
+			<canvas id="canvas" width="1280" height="720"></canvas>
+			<canvas id="canvas_temp" hidden></canvas>
+		</div>
+		<div id="videoContainer" hidden>
+			<video id="video" width="1280" height="720" style="background-color: #000000; pointer-events: none;" hidden autoplay playsinline webkit-playsinline">
+				<!--source src="videos/movie01_trimmed.mp4" type="video/mp4"-->
+				Your browser does not support the video tag.
+			</video>
+			<video id="video02" width="1280" height="720" style="background-color: #000000; pointer-events: none;" hidden autoplay playsinline webkit-playsinline">
+				<!--source src="videos/movie01_trimmed.mp4" type="video/mp4"-->
+				Your browser does not support the video tag.
+			</video>
+		</div>
+		<p> <a id="newTab" href="" target="_blank" rel="noopener noreferrer"></a></p>
+	</div>	
+</body>
+</html>
