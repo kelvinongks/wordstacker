@@ -1,12 +1,12 @@
 import streamlit as st
 from pathlib import Path
 
-# Clear cache (if needed)
-if hasattr(st, "cache_data"):
-    st.cache_data.clear()
-if hasattr(st, "cache_resource"):
-    st.cache_resource.clear()
+# Read HTML file
+try:
+    html_file = Path("index.html").read_text()
+except FileNotFoundError:
+    st.error("index.html not found. Make sure it is in the same folder as this script.")
+    st.stop()
 
-# Read and display HTML
-html_file = Path("index.html").read_text()
+# Display HTML
 st.components.v1.html(html_file, height=800)
